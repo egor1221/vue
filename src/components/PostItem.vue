@@ -6,6 +6,7 @@
         </div>
         <div class='post_btn'>
             <MyButton @click="$emit('remove', post)">Delete</MyButton>
+            <MyButton @click="$router.push(`/posts/${post.id}`)">Open</MyButton>
         </div>
     </div>
 </template>
